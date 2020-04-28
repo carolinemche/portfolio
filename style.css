@@ -1,0 +1,83 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.parallax{
+background-color: #fbf7f4;
+width: 100%;
+margin-top:-55px;
+
+/* Create the parallax scrolling effect */ : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax
+background-position: absolute;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+#bigName{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 5em;
+  text-align: center;
+  position: relative;
+  /* 5% from top */
+  top: 5%;
+}
+
+#smileyface{
+  /* center the gif */
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ /* resize*/
+ max-width: 18%;
+ height: auto;
+ position: relative;
+ /* top: 3%; */
+}
+
+#header1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.7em;
+  color: #555e69;
+  text-align: center;
+  position: relative;
+  top:-5%;
+}
+
+.welcome-box{
+  /* center */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  /* so text does not fill entire screen in one line */
+  width: 50%;
+
+}
+
+#welcome-info{
+  font-family: 'Gelasio', serif;
+  font-size:1.5em;
+  text-align:center;
+}
+
+#arrows{
+  /* center the gif */
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ /* resize*/
+ max-width: 8%;
+ height: auto;
+ position: relative;
+ top: 4%;
+
+}
