@@ -3,87 +3,68 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!-- google fonts: rubik + source serif -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Caroline Cheung</title>
 </head>
 
 <body>
 
-<!-- adapted from:  -->
-<div class="wrapper-parallax">
-<!-- WELCOME PAGE -->
-    <div class = "welcome-page">
+  <!-- adapted from:  -->
+  <div class="wrapper-parallax">
+    <!-- WELCOME PAGE -->
+    <div class="welcome-page">
       <!-- headers -->
-        <h1 id = "bigName"> CAROLINE CHEUNG </h1>
-        <h2 id = "desc"> PORTFOLIO SITE </h2>
-        <!-- gif -->
-        <img id = "homeBolt" src="assets/bolt.gif"/>
-        <!-- welcome text -->
-        <div class = "welcome-box">
-        <p id = "welcome-info"> hi! welcome! i'm caroline, a student at new york city! scroll down to learn more about me and
-        to view my work!</p>
-        </div>
+      <h1 id="bigName"> CAROLINE CHEUNG </h1>
+      <h2 id="desc"> PORTFOLIO SITE </h2>
+      <!-- gif -->
+      <img id="homeBolt" src="assets/bolt.gif" />
+      <!-- welcome text -->
+      <div class="welcome-box">
+        <p id="welcome-info"> hi! welcome! thank you for visiting my site! i'm caroline, a student at new york city! scroll down to learn more about me and
+          to view my work!</p>
+      </div>
+      <img id="homeArrows" src="assets/arrows.png" />
+
 
 
     </div>
     <!-- WELCOME PAGE CLOSING -->
 
-<!-- HOMEPAGE  -->
+    <!-- HOMEPAGE  -->
     <div class="content">
-        <h1>Content</h1>
+
+<!-- split screen tutorial: https://www.youtube.com/watch?v=bh3UAetYkUI&app=desktop -->
+<!-- no-gutters is a bootstrap class -->
+      <div class="row no-gutters">
+
+        <div class = "col-md-6">
+        <div class="categories">
+        </div>
+      </div>
+
+      <div class = "col-md-6">
+        <div class="about">
+        </div>
+      </div>
+
+      </div>
+
     </div>
-<!-- HOMEPAGE CLOSING -->
+      <!-- HOMEPAGE CLOSING -->
 
-</div>
-
-<!-- <div id = "parallax"> -->
- <!-- welcome/landing page, uses parallax effect where element does not scroll when user scrolls -->
-<!-- <div class = "parallax__layer parallax__layer--base"> -->
-  <!-- <h1 id = "bigName"> caroline cheung </h1> -->
-  <!-- gif -->
-  <!-- <img id = "smileyface" src="assets/smileyface.gif" loop= infinite />
-  <h2 id = "header1"> hello! </br> welcome! </h2> -->
-
-  <!-- welcome text -->
-  <!-- <div class = "welcome-box">
-  <p id = "welcome-info"> Thank you so much for visiting my website! I appreciate you
-    for checking it out. Just scroll down to view more!</p>
-  </div> -->
-  <!-- welcome text closing -->
-
-<!-- <img id = "arrows" src="assets/arrows.gif" loop= infinite /> -->
-
-<!-- </div> -->
-<!-- welcome/landing closing -->
-
-<!-- <div class = "parallax__layer parallax__layer--back">
-<p> this is the home </p>
-<p> this is the home </p>
-<p> this is the home </p>
-<p> this is the home </p>
-<p> this is the home </p>
-<p> this is the home </p>
-</div>
-
-
-</div> -->
+  </div>
+  <!-- PARALLAX CLOSING -->
 
 
 
 
 
 
-
-
-
-
-    <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

@@ -55,8 +55,7 @@ body {
   font-size: 32px;
   text-align: center;
   position: relative;
-  /* 5px up from original position */
-  bottom: 5px;
+  top: 5%;
 
 }
 
@@ -69,24 +68,13 @@ body {
  max-width: 8%;
  height: auto;
  position: relative;
+ top: 10%;
 
 }
 
 
 
 
-
-#smileyface{
-  /* center the gif */
- display: block;
- margin-left: auto;
- margin-right: auto;
- /* resize*/
- width: 18%;
- height: auto;
- position: relative;
- /* top: 3%; */
-}
 
 
 .welcome-box{
@@ -97,20 +85,20 @@ body {
   position:relative;
   /* so text does not fill entire screen in one line */
   width: 50%;
-  top: 5%;
+  top: 16%;
 
 }
 
 #welcome-info{
-  color:55e69;
+  color: #010b13;
   font-family: 'Source Serif Pro', serif;
   font-weight: 600;
   font-size:24px;
   text-align:center;
 }
 
-#arrows{
-  /* center the gif */
+#homeArrows{
+  /* center the image */
  display: block;
  margin-left: auto;
  margin-right: auto;
@@ -118,5 +106,29 @@ body {
  max-width: 8%;
  height: auto;
  position: relative;
- top: 4%;
+ top: 19%;
+ /* fix lining up */
+ right: 1%;
+}
+
+/* SPLIT SCREEN, 50vh for phone to split horizontally, adapted from: https://www.youtube.com/watch?v=bh3UAetYkUI&app=desktop */
+.categories, .about{
+  height: 50vh;
+  width: 100%;
+}
+
+.categories{
+  background-color: #fcc0d0;
+}
+
+.about{
+  background-color: #eb4335
+}
+
+/*on computer, vertically*/
+@media screen and (min-width:768px)
+{
+  .categories, .about{
+    height: 100vh;
+  }
 }
