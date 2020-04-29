@@ -97,6 +97,17 @@ body {
   text-align:center;
 }
 
+.italicR{
+  font-style: italic;
+  color: #eb4335;
+  font-size: 26px;
+}
+
+.italicP{
+  font-style: italic;
+  color: #fcc0d0;
+  font-size: 26px;
+}
 #homeArrows{
   /* center the image */
  display: block;
@@ -107,8 +118,7 @@ body {
  height: auto;
  position: relative;
  top: 19%;
- /* fix lining up */
- right: 1%;
+
 }
 
 /* SPLIT SCREEN, 50vh for phone to split horizontally, adapted from: https://www.youtube.com/watch?v=bh3UAetYkUI&app=desktop */
@@ -122,8 +132,35 @@ body {
 }
 
 .about{
-  background-color: #eb4335
+  background-color: #eb4335;
 }
+
+/* header box positioning */
+.box{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  top: 40px;
+
+}
+#headerL{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 55px;
+  color: #eb4335;
+  text-align: center;
+}
+
+#headerR{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 55px;
+  color: white;
+  text-align: center;
+
+}
+
 
 /*on computer, vertically*/
 @media screen and (min-width:768px)

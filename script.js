@@ -19,3 +19,9 @@ if (bigNameColors[randomN] == "#eb4335"){
 else{
   document.getElementById('desc').style.color = "#eb4335";
 }
+
+// click on arrows can also scroll to bottom: adapted from http://jsfiddle.net/q6Wsp/6/
+$('.scrollToBottom').click(function () {
+    $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+    return false;
+});
