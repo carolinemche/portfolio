@@ -8,27 +8,73 @@ body {
   box-sizing: inherit;
 }
 
-.parallax{
-background-color: #fbf7f4;
-width: 100%;
-margin-top:-55px;
-
-/* Create the parallax scrolling effect */ : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax
-background-position: absolute;
-background-repeat: no-repeat;
-background-size: cover;
+body {
+    margin: 0;
 }
 
+/* parallax effect adapted from http://fuzzytolerance.info/blog/2013/09/20/2013-09-20-simple-header-and-footer-parallax-effect/ */
+.welcome-page{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* places behind */
+    z-index: -1;
+    height: 100vh;
+    background-color: white;
+}
+/* creates space at top so welcome page can be seen*/
+.wrapper-parallax {
+    margin-top: 100vh;
+}
+
+.content {
+    position: relative;
+    /* places in front */
+    z-index: 1;
+    background: white;
+    /* fit screen */
+    min-height: 100vh;
+}
+
+/* -------------------------------- */
 
 #bigName{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  font-size: 5em;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
   text-align: center;
   position: relative;
-  /* 5% from top */
+  /* 5% down from original positon*/
   top: 5%;
+
 }
+
+#desc{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+  /* 5px up from original position */
+  bottom: 5px;
+
+}
+
+#homeBolt{
+  /* center the gif */
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ /*resize */
+ max-width: 8%;
+ height: auto;
+ position: relative;
+
+}
+
+
+
+
 
 #smileyface{
   /* center the gif */
@@ -36,21 +82,12 @@ background-size: cover;
  margin-left: auto;
  margin-right: auto;
  /* resize*/
- max-width: 18%;
+ width: 18%;
  height: auto;
  position: relative;
  /* top: 3%; */
 }
 
-#header1{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 1.7em;
-  color: #555e69;
-  text-align: center;
-  position: relative;
-  top:-5%;
-}
 
 .welcome-box{
   /* center */
@@ -60,12 +97,15 @@ background-size: cover;
   position:relative;
   /* so text does not fill entire screen in one line */
   width: 50%;
+  top: 5%;
 
 }
 
 #welcome-info{
-  font-family: 'Gelasio', serif;
-  font-size:1.5em;
+  color:55e69;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+  font-size:24px;
   text-align:center;
 }
 
@@ -79,5 +119,4 @@ background-size: cover;
  height: auto;
  position: relative;
  top: 4%;
-
 }
