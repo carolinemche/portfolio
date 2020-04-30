@@ -137,11 +137,9 @@ body {
 
 /* header box positioning */
 .box{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position:relative;
-  top: 40px;
+  display: flex;
+  justify-content: center;
+
 
 }
 #headerL{
@@ -150,6 +148,10 @@ body {
   font-size: 55px;
   color: #eb4335;
   text-align: center;
+  margin-top: 40px;
+  /* half background tutorial: https://thirtyeightvisuals.com/blog/low-highlight-heading-links-squarespace */
+  background: linear-gradient(180deg, #fcc0d0 70%, white 30%);
+
 }
 
 #headerR{
@@ -158,6 +160,8 @@ body {
   font-size: 55px;
   color: white;
   text-align: center;
+  margin-top: 40px;
+  background: linear-gradient(180deg, #eb4335 70%, #fcc0d0 30%);
 
 }
 
