@@ -165,11 +165,60 @@ body {
 
 }
 
+.catLinks{
+  margin-top: 10%;
+}
+
+/* style for buttons in the catLinks class */
+.catLinks h3{
+  text-align: center;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid white;
+}
+
+  .catLinks h3:hover{
+  color:#fcc0d0;
+  border: 1px solid white;
+  background-color: white;
+
+
+}
+
+.info{
+   width: 100%;
+   background-color: #fcc0d0;
+   color: white;
+   text-align: center;
+   align-items: flex-end;
+}
+
+
 
 /*on computer, vertically*/
 @media screen and (min-width:768px)
 {
   .categories, .about{
     height: 100vh;
+  }
+}
+
+/* fit to phone screen */
+@media screen and (max-width:768px)
+{
+  .catLinks h3{
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .catLinks{
+    margin-top: 5%;
   }
 }
