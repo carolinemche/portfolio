@@ -1,0 +1,87 @@
+.header{
+ padding: 40px;
+ text-align: center;
+ background: #fcc0d0;
+}
+.header h1{
+  font-family: 'Rubik', sans-serif;
+  color: #eb4335;
+  font-weight: 800;
+  font-size: 64px;
+  text-shadow: 2px 2px white;
+}
+
+.catTitle{
+  display: flex;
+  justify-content: center;
+
+}
+.catTitle h2{
+  font-family: 'Rubik', sans-serif;
+  color: #eb4335;
+  font-weight:500;
+  font-size: 45px;
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(180deg, white 70%, #fcc0d0 30%);
+}
+
+/* Style the buttons that are used to open and close the accordion panel, adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion */
+		.accordion {
+		    background-color: #fcc0d0;
+		    color: white;
+		    cursor: pointer;
+		    padding: 18px;
+		    width: 70%;
+		    text-align: middle;
+		    border: 1px solid white;
+		    outline: none;
+		    transition: 0.4s;
+        /* set to middle  */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        /* font */
+        font-family: 'Rubik', sans-serif;
+        font-size: 24px;
+        font-weight:400;
+        font-size: 26px;
+		}
+
+		/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+		.active, .accordion:hover {
+		    background-color: #ffdbe5;
+		}
+
+		/* Style the accordion panel. Note: hidden by default */
+		.panel {
+      width: 69%;
+		    padding: 0 18px;
+		    background-color: white;
+		    max-height: 0;
+		    overflow: hidden;
+		    transition: max-height 0.2s ease-out;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+		}
+
+.panel p{
+  color: #010b13;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+  font-size:18px;
+  text-align:center;
+}
+
+		.accordion:after {
+		    content: '\02795'; /* Unicode character for "plus" sign (+) */
+		    font-size: 13px;
+		    float: left;
+		    margin-right: 5px;
+		}
+
+		.active:after {
+		    content: "\2796"; /* Unicode character for "minus" sign (-) */
+		}
