@@ -1,5 +1,5 @@
 .header{
- padding: 40px;
+ padding: 30px;
  text-align: center;
  background: #fcc0d0;
 }
@@ -24,6 +24,37 @@
   text-align: center;
   display: inline-block;
   background: linear-gradient(180deg, white 70%, #fcc0d0 30%);
+}
+
+.navLinks{
+  margin-top: -40px;
+  text-align: center;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navLinks p{
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-weight:500;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+
+}
+
+.navLinks p:hover{
+  color:#eb4335;
+  background: linear-gradient(180deg, #fcc0d0 80%, white 20%);
+
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Style the buttons that are used to open and close the accordion panel, adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion */
@@ -56,7 +87,7 @@
 
 		/* Style the accordion panel. Note: hidden by default */
 		.panel {
-      width: 69%;
+        width: 69%;
 		    padding: 0 18px;
 		    background-color: white;
 		    max-height: 0;
