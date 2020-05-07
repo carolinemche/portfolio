@@ -14,7 +14,6 @@
 .catTitle{
   display: flex;
   justify-content: center;
-
 }
 .catTitle h2{
   font-family: 'Rubik', sans-serif;
@@ -25,6 +24,31 @@
   display: inline-block;
   background: linear-gradient(180deg, white 70%, #fcc0d0 30%);
 }
+
+#catBolt{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*resize */
+  max-width: 5%;
+  height: auto;
+  padding-top: 2%;
+}
+
+.subTitle{
+  display: flex;
+  justify-content: center;
+}
+
+.subTitle h3{
+  font-family: 'Rubik', sans-serif;
+  color: #eb4335;
+  font-weight:500;
+  font-size: 35px;
+  text-align: center;
+  display: inline-block;
+}
+
 
 .navLinks{
   margin-top: -40px;
@@ -52,11 +76,71 @@
 
 }
 
+.three{
+  display: flex;
+  justify-content:center;
+}
+
+
+
+/* three equal columns: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+#group{
+  flex: 33.33%;
+padding: 5px;
+  width: 10vw;
+}
+
+#image3{
+  width: 10vw;
+}
+
 a{
   text-decoration: none;
   color: inherit;
 }
 
+#image{
+  width: 30vw;
+  padding: .5em;
+  /* set to middle  */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#divider{
+  display:flex;
+  justify-content: center;
+}
+
+p#divider{
+  color: white;
+  text-decoration-line: underline;
+  text-decoration-style: line;
+  text-decoration-color: #eb4335;
+}
+#image2{
+  width: 40vw;
+  padding: .5em;
+  /* set to middle  */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ p#left{
+   text-align: left;
+ }
+#link{
+  color: #eb4335;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+  font-size:18px;
+  font-weight: 600;
+}
+
+#link:hover{
+  color: #fcc0d0;
+}
 /* Style the buttons that are used to open and close the accordion panel, adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion */
 		.accordion {
 		    background-color: #fcc0d0;
@@ -103,7 +187,7 @@ a{
   font-family: 'Source Serif Pro', serif;
   font-weight: 400;
   font-size:18px;
-  text-align:center;
+  text-align: left;
 }
 
 		.accordion:after {

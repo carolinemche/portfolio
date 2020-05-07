@@ -72,10 +72,42 @@ body {
 
 }
 
+#propic{
+  /* center the gif */
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ /*resize */
+width: 15vw;
+ height: auto;
+ position: relative;
+ top: 10px;
+}
 
+#white{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center;
+  style: italic;
+  position: relative;
+  /* 5% down from original positon*/
+  top: 5%;
+  text-align: center;
+  color: white;
 
+}
 
-
+#aboutTxt{
+  color: #010b13;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+  font-size:1em;
+  text-align:left;
+  position:relative;
+  top: 5%;
+  margin-left: 2%;
+}
 
 
 .welcome-box{
@@ -154,7 +186,22 @@ body {
   background: linear-gradient(180deg, #fcc0d0 70%, white 30%);
 
 }
+ #pink{
+   color: #fcc0d0;
+ }
 
+.info a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.info a:hover{
+  color:white;
+  border: 1px solid white;
+  background-color: #eb4335;
+  display: inline-block;
+
+}
 #headerR{
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -235,11 +282,35 @@ body {
 @media screen and (max-width:768px)
 {
   .catLinks h3{
-    font-size: 18px;
+    font-size: .8em;
     padding: 5px;
   }
+ .info p{
+   font-size: .5em;
+ }
 
+ p#aboutTxt{
+   font-size: .6em;
+ }
+
+ p#info{
+   font-size: .4em;
+
+ }
+
+ #headerR , #headerL{
+   font-size: 1.5em;
+ }
   .catLinks{
     margin-top: 5%;
+  }
+  h1#bigName{
+    font-size:2.5em;
+  }
+  h2#desc{
+    font-size: 1.8em;
+  }
+  p#welcome-info{
+    font-size:1em;
   }
 }
